@@ -15,7 +15,7 @@ Assigned to:	Themeforest
 3. Header Top / #educo_wrapper
 4. Header Bottom / .ed_header_bottom
 5. Main Menu / .edoco_menu
-6. Sub Menu / .edoco_menu ul li ul 
+6. Sub Menu / .edoco_menu ul li ul
 7. Main Slider / .ed_slider_form_section
 8. Search form/ .ed_form_box
 9. Populer Areas Section / .ed_transprentbg
@@ -38,7 +38,7 @@ Assigned to:	Themeforest
 26. Course Page / .ed_courses
 27. Contact Page / .ed_contact_form
 28. Error Page / .ed_error_wrapper
-29. Custom Radio Button And Check Box /.custom-checkbox 
+29. Custom Radio Button And Check Box /.custom-checkbox
 30. Instructor Single Page / .ed_dashboard_wrapper
 31. Student Detail Page / .ed_dashboard_tab_info
 32. Become Teacher Page / .ed_teacher_div
@@ -412,7 +412,7 @@ textarea:focus {
 .edoco_menu {
     display: inline-block;
     width: 100%;
-}	
+}
 .edoco_menu ul {
 	list-style: none;
 	margin:0px;
@@ -452,7 +452,7 @@ textarea:focus {
 	color:#167ac6;
 }
 /*---------------------menu end---------------------*/
-/*------------------Sub menu start-----------------*/	
+/*------------------Sub menu start-----------------*/
 .edoco_menu ul li:hover ul.sub-menu {
     opacity: 1;
     visibility: visible;
@@ -504,7 +504,7 @@ textarea:focus {
 }
 /*------------------Sub menu end-----------------*/
 
-/*------------------Sub menu --Sub menu start-----------------*/	
+/*------------------Sub menu --Sub menu start-----------------*/
 .edoco_menu ul li ul.sub-menu li:hover ul.sub-menu {
 	opacity:1;
 	visibility:visible;
@@ -536,7 +536,7 @@ textarea:focus {
 }
 /*------------------Sub menu --Sub menu end-----------------*/
 
-/*------------------Sub menu --Sub menu --Sub menu start-----------------*/	
+/*------------------Sub menu --Sub menu --Sub menu start-----------------*/
 .edoco_menu ul li ul.sub-menu li:hover ul.sub-menu li:hover ul.sub-menu {
 	opacity:1;
 	visibility:visible;
@@ -643,7 +643,7 @@ textarea:focus {
 	text-transform:capitalize;
 }
 .ed_search_form .ed_orange{
-	
+
 }
 .ed_dots {
     float: left;
@@ -917,7 +917,7 @@ a.ed_getinvolved i{
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
 	-o-transition: all 0.3s;
-	transition: all 0.3s; 
+	transition: all 0.3s;
 }
 a.ed_getinvolved:hover i{
 	-webkit-transition: all 0.3s;
@@ -1031,9 +1031,27 @@ a.ed_getinvolved:hover i{
 }
 .ed_video_section{
 	float: left;
-    width: 98%;
+  width: 98%;
 	position:relative;
+	display: inline-block;
+  margin-bottom: 20px;
+	 overflow: hidden;
 }
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 .ed_video_section  img{
 	width:100%;
 }
@@ -1433,7 +1451,7 @@ a.ed_getinvolved:hover i{
 /*------- Footer top start --------*/
 .ed_footer_wrapper{
 	float:left;
-	width:100%;	
+	width:100%;
 }
 .ed_footer_top{
 	float: left;
@@ -1446,7 +1464,7 @@ a.ed_getinvolved:hover i{
 	width:100%;
 }
 .text-widget img{
-	margin-bottom:27px;	
+	margin-bottom:27px;
     margin-top: 4px;
 }
 .text-widget p{
@@ -1507,7 +1525,7 @@ a.ed_getinvolved:hover i{
 	font-size:22px;
 	text-transform:capitalize;
 	position:relative;
-	margin-bottom:65px;
+	margin-bottom:20px;
     margin-top: 0;
     font-weight: normal;
     padding-bottom: 0;
@@ -1622,7 +1640,7 @@ a.ed_getinvolved:hover i{
 	transition: all 0.3s;
 }
 .ed_footer_menu ul li a:hover{
-    color: #167ac6;	
+    color: #167ac6;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
@@ -1840,7 +1858,7 @@ a.ed_getinvolved:hover i{
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
 	-o-transition: all 0.3s;
-	transition: all 0.3s; 
+	transition: all 0.3s;
 }
 .ed_latest_newsslider .ed_latestnews a:hover i{
 	 -webkit-transition:  all 0.3s ease;
@@ -2187,8 +2205,8 @@ a.ed_getinvolved:hover i{
 .ed_blog_tags ul li i{
 	color:#167ac6;
 	-ms-transform: rotate(85deg); /* IE 9 */
-	-moz-transform: rotate(85deg); 
-	-o-transform: rotate(85deg); 
+	-moz-transform: rotate(85deg);
+	-o-transform: rotate(85deg);
     -webkit-transform: rotate(85deg); /* Chrome, Safari, Opera */
     transform: rotate(85deg);
 }
@@ -2738,7 +2756,7 @@ a.ed_getinvolved:hover i{
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-	
+
 }
 .widget_button a:hover{
 	-webkit-transition: all 0.3s;
@@ -3630,7 +3648,7 @@ a.ed_getinvolved:hover i{
 	width:100%;
 	border-bottom:0px solid #ddd;
     margin-bottom: 30px;
-	background-color: #fff;	
+	background-color: #fff;
 }
 .ed_sidebar_wrapper h3{
 	float:left;
@@ -3788,7 +3806,7 @@ a.ed_getinvolved:hover i{
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-.ed_dashboard_inner_tab .nav .open > a, .ed_dashboard_inner_tab .nav .open > a:hover, .ed_dashboard_inner_tab .nav .open > a:focus { 
+.ed_dashboard_inner_tab .nav .open > a, .ed_dashboard_inner_tab .nav .open > a:hover, .ed_dashboard_inner_tab .nav .open > a:focus {
     background-color: #167ac6;
     border-color: #167ac6;
 	color:#ffffff;
@@ -4092,8 +4110,8 @@ a.ed_getinvolved:hover i{
 	background-color: #167ac6;
 	left:0px;
 	top:100%;
-	
-} 
+
+}
 .checkout.woocommerce-checkout .form-group label {
     color: #272727;
     font-family: 'Roboto Slab', serif;
@@ -4957,9 +4975,9 @@ a.ed_getinvolved:hover i{
 }
 
  @media (min-width: 480px) and (max-width: 767px) {
- 
+
 .ed_form_box {
-    position: relative; 
+    position: relative;
     bottom: 0px;
     margin-top: 20px;
 }
@@ -5219,7 +5237,7 @@ a.ed_getinvolved:hover i{
     padding: 10px;
 }
 .ed_single_wrapper .ed_btn{
-	padding:13px 18px; 
+	padding:13px 18px;
 }
 .ed_blog_bottom_pagination .pagination > li > a, .pagination > li > span {
     padding: 5px 10px;
@@ -5227,7 +5245,7 @@ a.ed_getinvolved:hover i{
 .ed_blog_bottom_pagination .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
     padding: 5px 20px;
 }
-.cart_totals {   
+.cart_totals {
     width: 100%;
 }
 .ed_info_wrapper {

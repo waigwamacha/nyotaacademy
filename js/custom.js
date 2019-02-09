@@ -1,6 +1,6 @@
 (function($){
   "use strict";
-	
+
 	// on ready function
 	jQuery(document).ready(function($) {
    		var $this = $(window);
@@ -10,48 +10,48 @@
 			sliderLayout:"fullwidth",
 			delay:9000,
 			navigation: {
-				arrows:{enable:true}				
-			},			
+				arrows:{enable:true}
+			},
 			gridwidth:1230,
-			gridheight:600		
-		});		
-		// for counter 
+			gridheight:600
+		});
+		// for counter
 		$('.timer').appear(function() {
 			$(this).countTo();
 		});
-		
-	//  event on map/image js     
+
+	//  event on map/image js
 		$('.on_map').on("click", function() {
 			$('.ed_event_wrapper_item_img').html('<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2487.7976787272055!2d-0.220688!3d51.42514310000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x487608ce712e537b%3A0x65dcfea053cfc083!2s42+High+Street+Wimbledon%2C+Wimbledon%2C+London+SW19+5AU%2C+UK!3m2!1d51.4251431!2d-0.220688!5e0!3m2!1sen!2sin!4v1441369941136" allowfullscreen></iframe>');
 			$('.on_map').hide();
 			$('.on_image').show();
 		});
-		
+
 		$('.on_image').on("click", function() {
 			$('.ed_event_wrapper_item_img').html('<img src="images/slider/sec1_s5.jpg" alt="item1" class="img-responsive">');
 			$('.on_image').hide();
 			$('.on_map').show();
 		});
-	
+
 	// video section
 		jQuery(function($){
 		$('#educo_video').css("display", "none");
 		$('.ed_video_section .ed_img_overlay a i').on("click", function(e) {
 			e.preventDefault();
-			$('.ed_video_section .ed_video').hide();	
+			$('.ed_video_section .ed_video').hide();
 			$('#educo_video').css("display", "block");
 			$('#educo_video').attr('src',$('#educo_video').attr('src')+'?rel=0&autoplay=1');
 		});
-		
+
 			});
-			
+
 	// woocommerce checkout process
 		$("input[name$='checkout']").on("click",function () {
         var test = $(this).val();
         $(".payment_box").hide('slow');
         $(".payment_box[data-period='" + test + "']").show('slow');
 		});
-	
+
 	// On focus Placeholder css
 	var place = '';
 		$('input,textarea').focus(function(){
@@ -60,42 +60,42 @@
 		}).blur(function(){
 		$(this).attr('placeholder',place);
 		});
-	
+
 	// Menu js for Position fixed
 		$(window).scroll(function(){
-			var window_top = $(window).scrollTop() + 1; 
+			var window_top = $(window).scrollTop() + 1;
 				if (window_top > 500) {
 					$('.ed_header_bottom').addClass('menu_fixed animated fadeInDown');
 				} else {
 					$('.ed_header_bottom').removeClass('menu_fixed animated fadeInDown');
 				}
 		});
-	
+
 	//show hide login form js
 		$('#login_button').on("click", function(e) {
 			$('#login_one').slideToggle(1000);
-			e.stopPropagation(); 
+			e.stopPropagation();
 		});
-	
+
 	$(document).click(function(e){
-		if(!(e.target.closest('#login_one'))){	
-			$("#login_one").slideUp("slow");    		
+		if(!(e.target.closest('#login_one'))){
+			$("#login_one").slideUp("slow");
 		}
    });
-	
+
 	//show hide share button
 		$('#ed_share_wrapper').on("click", function() {
 			$('#ed_social_share').slideToggle(1000);
 		});
-	
+
 	// invitation_form on Event single page
 		$('#invitation_form').on('shown.bs.modal', function () {
 		$('#myInput').focus();
-		});	
+		});
 
 	//initialise Stellar.js
 		$(window).stellar();
-		
+
 	//section one slider
 		$(".section_one_slider .owl-carousel, .ed_populer_areas_slider .owl-carousel").owlCarousel({
 		items:4,
@@ -129,8 +129,8 @@
 				nav:true
 			}
 		}
-		});	
-		
+		});
+
 	//section four slider
 		$(".section_four_slider .owl-carousel, .ed_mostrecomeded_course_slider .owl-carousel").owlCarousel({
 		items:4,
@@ -164,8 +164,8 @@
 				nav:true
 			}
 		}
-		});	
-		
+		});
+
 	//section five slider
 		$(".section_five_slider .owl-carousel, .ed_latest_news_slider .owl-carousel").owlCarousel({
 		items:3,
@@ -195,8 +195,8 @@
 				nav:true
 			}
 		}
-		});	
-	
+		});
+
 	//client slider
 		$(".ed_clientslider .owl-carousel").owlCarousel({
 		items:5,
@@ -222,8 +222,8 @@
 				items:5
 			}
 		}
-		});	
-		
+		});
+
 	//section sidebar slider
 		$(".ed_sidebar_slider .owl-carousel").owlCarousel({
 		items:1,
@@ -236,7 +236,7 @@
 		touchDrag: false,
 		mouseDrag: false,
 		margin:30,
-	
+
 		autoplay:false,
 		navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
 		responsiveClass:true,
@@ -254,8 +254,8 @@
 				nav:true
 			}
 		}
-		});	
-	
+		});
+
 	// Contact Form Submition
 		$("#ed_submit").on("click", function() {
         var e = $("#uname").val();
@@ -289,7 +289,7 @@
             }
         });
 		});
-	
+
 	// SmoothScroll js
 		smoothScroll.init({
 			speed: 1000,
@@ -298,55 +298,55 @@
 			updateURL: true,
 			callback: function ( toggle, anchor ) {}
 		});
-		
+
 	// Event Page Select Box
 		var selectToggleOptions = function(e) {
 		e.preventDefault();
 		var selectBox = $(this);
 		var options = selectBox.next('.ed_custom_select_box_options');
-		
+
 		options.toggle();
 		};
-		
+
 		var selectSwap = function(e) {
 		e.preventDefault();
-		
+
 	// Store the elements
 		var listItem = $(this);
 		var listItemParent = listItem.parent().parent();
 		var selectBoxButton = listItemParent.prev('.ed_custom_select_box_button');
 		var selectBoxSpan = selectBoxButton.children('span');
-		
+
 	// Store the current values
 		var currentText = selectBoxSpan.text();
 		var currentValue = selectBoxButton.data('selectValue');
-		
+
 	// Store the new values
 		var newText = listItem.text();
 		var newValue = listItem.data('selectValue');
-		
+
 		if(currentText != newText) {
 			selectBoxSpan.empty().text(newText);
 		}
-		
+
 		if(currentValue != newValue) {
 			selectBoxButton.attr('data-select-value', newValue);
 		}
-		
+
 		listItemParent.toggle();
-		
+
 		};
-		
+
 		$('.ed_custom_select_box_button').on("click", (selectToggleOptions));
 		$('.ed_custom_select_box_options li a').on("click",(selectSwap));
-		
+
 	// Video Play js
 		function play_utube_video()
 		{
 			$('#utube_video_ply').attr('src',$('#utube_video_ply').attr('src')+'?rel=0&autoplay=1');
 		}
 	// Calender js
-	
+
 	/* "YYYY-MM[-DD]" => Date */
 	function strToDate(str) {
 		try {
@@ -524,6 +524,46 @@
 			$(this).calendar();
 		});
 	});
-	
+
 	});
-})(); 
+})();
+
+
+// video js
+
+
+// Find all YouTube videos
+var $allVideos = $("iframe[src^='//www.youtube.com']"),
+
+    // The element that is fluid width
+    $fluidEl = $("body");
+
+// Figure out and save aspect ratio for each video
+$allVideos.each(function() {
+
+  $(this)
+    .data('aspectRatio', this.height / this.width)
+
+    // and remove the hard coded width/height
+    .removeAttr('height')
+    .removeAttr('width');
+
+});
+
+// When the window is resized
+$(window).resize(function() {
+
+  var newWidth = $fluidEl.width();
+
+  // Resize all videos according to their own aspect ratio
+  $allVideos.each(function() {
+
+    var $el = $(this);
+    $el
+      .width(newWidth)
+      .height(newWidth * $el.data('aspectRatio'));
+
+  });
+
+// Kick off one resize to fix all videos on page load
+}).resize();
