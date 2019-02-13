@@ -588,9 +588,24 @@ textarea:focus {
 /*------------------Sub menu --Sub menu --Sub menu end-----------------*/
 /*---------- Slider start ---------*/
 .ed_slider_form_section {
-	float:left;
-	width:100%;
+	/* float:left; */
+	display: flex;
+	width:90%;
 	position:relative;
+	/* margin-left: 20px;
+	margin-right: 20px; */
+}
+
+#rev_slider_4_1_wrapper {
+
+margin:0px auto;
+background-color:transparent;
+padding:0px;
+padding-left: 150px;
+padding-right: 150px;
+margin-top:0px;
+margin-bottom:0px;
+
 }
 /*--------- Slider end ---------*/
 /*--------- Search form start --------*/
@@ -4758,6 +4773,61 @@ a.ed_getinvolved:hover i{
 
 /*------ responsive css start ----*/
 
+/* slider responsive */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+#rev_slider_4_1_wrapper {
+margin:0px auto;
+background-color:transparent;
+padding:0px;
+padding-left: 50px;
+padding-right: 50px;
+margin-top:0px;
+margin-bottom:0px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	#rev_slider_4_1_wrapper {
+	margin:0px auto;
+	background-color:transparent;
+	padding:0px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+	#rev_slider_4_1_wrapper {
+	margin:0px auto;
+	background-color:transparent;
+	padding:0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+}
+
+@media (max-width: 479px) {
+
+	#rev_slider_4_1_wrapper {
+	margin:0px auto;
+	background-color:transparent;
+	padding:0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+}
+
+/* end of slider */
+
 @media (min-width: 992px) and (max-width: 1199px) {
 .ed_dots{
 	width: 30px;
@@ -4975,7 +5045,6 @@ a.ed_getinvolved:hover i{
 }
 
  @media (min-width: 480px) and (max-width: 767px) {
-
 .ed_form_box {
     position: relative;
     bottom: 0px;
@@ -5094,7 +5163,6 @@ a.ed_getinvolved:hover i{
 }
 
 @media (max-width: 479px) {
-
 .menu_fixed {
     position: initial;
 }
